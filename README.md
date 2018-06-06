@@ -22,6 +22,8 @@ boot2docker ip
 sudo route add -net 172.17.0.0/16 <docker-machine or boot2docker>
 # e.g:
 sudo route add -net 172.17.0.0/16 192.168.99.100
+# or for windows cygwin
+route add 172.17.0.0/16 $(docker-machine ip dev)
 ```
 **Note:**  the above mentioned route command will not survive a reboot and you need to execute again after reboot of your machine.
 
